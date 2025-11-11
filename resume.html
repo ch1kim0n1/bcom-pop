@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Download Vladislav Kondratyev's resume - CS student at UT Dallas with experience in software engineering, AI, and product development.">
+  <meta name="author" content="Vladislav Kondratyev">
+  <title>Resume - Vladislav Kondratyev | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <!-- Skip to content for accessibility -->
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="header-prompt">
+      <span class="user">vladislav_k</span><span class="separator">:~/$</span>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html" class="active">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Mouse Glow Effect -->
+  <div id="mouse-glow"></div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+
+      <!-- Resume Intro -->
+      <section class="resume-intro scroll-reveal">
+        <h1 class="accent">Resume</h1>
+        <p class="command-header">cat resume_vladislav_kondratyev.pdf</p>
+        <p>Below is my current resume in JSOM format, which summarizes my education, technical experience, leadership, and key projects.</p>
+      </section>
+
+      <!-- Resume Highlights -->
+      <section class="scroll-reveal">
+        <h2 class="command-header">grep -i "highlights" resume.txt</h2>
+        <p>I've highlighted:</p>
+        <ul class="terminal-list">
+          <li>My work experience in software engineering and related roles</li>
+          <li>Technical skills in programming, AI, and web development</li>
+          <li>Campus involvement, leadership, and hackathon participation</li>
+          <li>Selected projects that show my initiative and ability to build real systems</li>
+        </ul>
+        <p>Please feel free to download or view it in full for more detail.</p>
+      </section>
+
+      <!-- Resume Container -->
+      <section class="resume-container scroll-reveal">
+        <div class="resume-embed">
+          <!-- Placeholder for resume PDF -->
+          <div class="resume-placeholder">
+            <p class="accent">[Resume PDF Preview]</p>
+            <p>Place your JSOM-format resume PDF in <code>assets/resume/</code> and it will display here.</p>
+            <p class="mt-md">To embed your resume, add this code:</p>
+            <p><code>&lt;iframe src="assets/resume/your_resume.pdf" width="100%" height="800px"&gt;&lt;/iframe&gt;</code></p>
+          </div>
+
+          <!-- Uncomment this when you have your resume PDF ready -->
+          <!--
+          <iframe src="assets/resume/vladislav_kondratyev_resume.pdf" width="100%" height="800px"></iframe>
+          -->
+        </div>
+
+        <!-- Download Button -->
+        <div class="resume-download">
+          <a href="assets/resume/vladislav_kondratyev_resume.pdf" class="download-btn" download>
+            Download Resume
+          </a>
+          <!-- Update the href with your actual resume file path -->
+        </div>
+      </section>
+
+      <!-- Resume Details (Text Version) -->
+      <section class="scroll-reveal">
+        <h2 class="command-header">cat resume_text_version.txt</h2>
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="terminal-button close"></span>
+              <span class="terminal-button minimize"></span>
+              <span class="terminal-button maximize"></span>
+            </div>
+            <div class="terminal-title">resume_summary.txt</div>
+          </div>
+          <div class="terminal-content">
+            <h3 class="accent">VLADISLAV KONDRATYEV</h3>
+            <p>Computer Science Student | Software Engineer | Builder</p>
+            <p>The University of Texas at Dallas</p>
+
+            <h4 class="mt-lg accent">EDUCATION</h4>
+            <p><strong>Bachelor of Science in Computer Science</strong></p>
+            <p>The University of Texas at Dallas</p>
+            <p>Expected Graduation: [Your graduation date]</p>
+            <p>GPA: [Your GPA if you want to include it]</p>
+
+            <h4 class="mt-lg accent">TECHNICAL SKILLS</h4>
+            <ul class="terminal-list">
+              <li><strong>Languages:</strong> Python, JavaScript/TypeScript, Java, C++, SQL, HTML/CSS</li>
+              <li><strong>Frameworks & Libraries:</strong> React, Node.js, Express, Flask, TailwindCSS</li>
+              <li><strong>Tools & Technologies:</strong> Git, Docker, AWS, Firebase, PostgreSQL, MongoDB</li>
+              <li><strong>AI/ML:</strong> OpenAI API, LangChain, Machine Learning fundamentals</li>
+            </ul>
+
+            <h4 class="mt-lg accent">EXPERIENCE</h4>
+            <p><strong>Software Engineering Intern</strong> | [Company Name]</p>
+            <p>[Dates]</p>
+            <ul class="terminal-list">
+              <li>Developed full-stack features for [project/product]</li>
+              <li>Collaborated with cross-functional teams to deliver solutions</li>
+              <li>Improved system performance and user experience</li>
+            </ul>
+
+            <h4 class="mt-lg accent">PROJECTS</h4>
+            <p><strong>EchoMind</strong> - AI Desktop Companion</p>
+            <ul class="terminal-list">
+              <li>Building an AI-powered desktop assistant with contextual awareness</li>
+              <li>Implementing natural language processing and emotional intelligence</li>
+            </ul>
+
+            <p class="mt-md"><strong>MeteorMate</strong> - AI Roommate Matching System</p>
+            <ul class="terminal-list">
+              <li>Developing a platform to match students with compatible roommates</li>
+              <li>Using machine learning to analyze preferences and lifestyle data</li>
+            </ul>
+
+            <h4 class="mt-lg accent">LEADERSHIP & INVOLVEMENT</h4>
+            <ul class="terminal-list">
+              <li>Active participant in university hackathons and coding competitions</li>
+              <li>Member of robotics teams and technical student organizations</li>
+              <li>Contributor to open-source projects and research initiatives</li>
+            </ul>
+
+            <p class="mt-lg"><em>This is a simplified text version. Download the full PDF for complete details.</em></p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Vladislav Kondratyev | Built with vanilla HTML, CSS, and JavaScript</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

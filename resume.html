@@ -46,14 +46,13 @@
 
       <!-- Resume Intro -->
       <section class="resume-intro scroll-reveal">
-        <h1 class="accent">Resume</h1>
-        <p class="command-header">cat resume_vladislav_kondratyev.pdf</p>
-        <p>Below is my current resume in JSOM format, which summarizes my education, technical experience, leadership, and key projects.</p>
+        <h1>Resume</h1>
+        <p>Below is my current resume. You can read it directly on the page or download the PDF.</p>
       </section>
 
       <!-- Resume Highlights -->
       <section class="scroll-reveal">
-        <h2 class="command-header">grep -i "highlights" resume.txt</h2>
+        <h2>Highlights</h2>
         <p>I've highlighted:</p>
         <ul class="terminal-list">
           <li>My work experience in software engineering and related roles</li>
@@ -67,32 +66,16 @@
       <!-- Resume Container -->
       <section class="resume-container scroll-reveal">
         <div class="resume-embed">
-          <!-- Placeholder for resume PDF -->
-          <div class="resume-placeholder">
-            <p class="accent">[Resume PDF Preview]</p>
-            <p>Place your JSOM-format resume PDF in <code>assets/resume/</code> and it will display here.</p>
-            <p class="mt-md">To embed your resume, add this code:</p>
-            <p><code>&lt;iframe src="assets/resume/your_resume.pdf" width="100%" height="800px"&gt;&lt;/iframe&gt;</code></p>
-          </div>
-
-          <!-- Uncomment this when you have your resume PDF ready -->
-          <!--
-          <iframe src="assets/resume/vladislav_kondratyev_resume.pdf" width="100%" height="800px"></iframe>
-          -->
+          <iframe src="assets/vlad_v7.pdf" title="Embedded PDF Resume" loading="lazy"></iframe>
         </div>
-
-        <!-- Download Button -->
         <div class="resume-download">
-          <a href="assets/resume/vladislav_kondratyev_resume.pdf" class="download-btn" download>
-            Download Resume
-          </a>
-          <!-- Update the href with your actual resume file path -->
+          <a href="assets/vlad_v7.pdf" class="download-btn" download>Download Resume</a>
         </div>
       </section>
 
       <!-- Resume Details (Text Version) -->
       <section class="scroll-reveal">
-        <h2 class="command-header">cat resume_text_version.txt</h2>
+        <h2>Resume Summary (Text Version)</h2>
         <div class="terminal-window">
           <div class="terminal-header">
             <div class="terminal-buttons">
@@ -104,53 +87,62 @@
           </div>
           <div class="terminal-content">
             <h3 class="accent">VLADISLAV KONDRATYEV</h3>
-            <p>Computer Science Student | Software Engineer | Builder</p>
-            <p>The University of Texas at Dallas</p>
+            <p>vxk230059@utdallas.edu | LinkedIn: in/vladislav-kondratyev/ | GitHub: ch1kim0n1</p>
 
             <h4 class="mt-lg accent">EDUCATION</h4>
-            <p><strong>Bachelor of Science in Computer Science</strong></p>
-            <p>The University of Texas at Dallas</p>
-            <p>Expected Graduation: [Your graduation date]</p>
-            <p>GPA: [Your GPA if you want to include it]</p>
+            <p><strong>The University of Texas at Dallas</strong></p>
+            <p>Bachelor's Degree in Computer Science | GPA: 3.84 | May 2027</p>
+            <p><strong>Leadership:</strong> Head of Software Engineering at UTD AIAA, Comet Robotics, UTD ACM, and UTD BioTech</p>
+            <p><strong>Research:</strong> VR Behavioral Recognition & Brain Science Lab (Dr. Ravi) & Early Cancer Cell Detection Lab (Dr. Fang)</p>
+            <p><strong>Hackathons:</strong> Winner at HackSMU 2024, HackRice 2025, HackAI 2025, Amazon's Beyond Limits 2024, HackTX 2024, UTD JSOM FinHack 2025</p>
 
             <h4 class="mt-lg accent">TECHNICAL SKILLS</h4>
             <ul class="terminal-list">
-              <li><strong>Languages:</strong> Python, JavaScript/TypeScript, Java, C++, SQL, HTML/CSS</li>
-              <li><strong>Frameworks & Libraries:</strong> React, Node.js, Express, Flask, TailwindCSS</li>
-              <li><strong>Tools & Technologies:</strong> Git, Docker, AWS, Firebase, PostgreSQL, MongoDB</li>
-              <li><strong>AI/ML:</strong> OpenAI API, LangChain, Machine Learning fundamentals</li>
+              <li><strong>Languages:</strong> Python, Java, JavaScript, TypeScript, C++, C#, Go, SQL, Bash, HTML, CSS, PHP, Ruby, Rust</li>
+              <li><strong>Frameworks & Libraries:</strong> React, Node.js, FastAPI, Flask, Express.js, Redux, Tailwind CSS, Next.js, Vite, NPM, Expo</li>
+              <li><strong>Cloud & DevOps:</strong> AWS (EC2, Lambda, SageMaker, Lex), Google Cloud Platform, Kubernetes, Docker, Jenkins, Vercel, GitHub Actions, CI/CD</li>
+              <li><strong>AI/ML:</strong> TensorFlow, PyTorch, LightGBM, RoBERTa, OpenVINO, GenAI, NLP, AWS Q</li>
+              <li><strong>Databases:</strong> PostgreSQL, MongoDB, MySQL, GraphQL, ChromaDB</li>
+              <li><strong>Tools:</strong> REST API Development, API Design (Swagger, Postman), UX/UI Design, Data Engineering, Microservices Architecture</li>
             </ul>
 
-            <h4 class="mt-lg accent">EXPERIENCE</h4>
-            <p><strong>Software Engineering Intern</strong> | [Company Name]</p>
-            <p>[Dates]</p>
+            <h4 class="mt-lg accent">PROFESSIONAL EXPERIENCE</h4>
+            
+            <p><strong>Intel Corporation</strong> | Software Engineer Intern - XeSS Team | Austin, TX | May 2025 - Aug 2025</p>
             <ul class="terminal-list">
-              <li>Developed full-stack features for [project/product]</li>
-              <li>Collaborated with cross-functional teams to deliver solutions</li>
-              <li>Improved system performance and user experience</li>
+              <li>Optimized XeSS 2.x integration into AAA and indie game pipelines, improving frame rates by up to 40%</li>
+              <li>Developed AI-powered super-resolution shaders in HLSL and DPC++, reducing temporal artifacts by 25%</li>
+              <li>Refactored model deployment pipeline using C++, PyTorch, and OpenVINO, reducing inference time by 35%</li>
             </ul>
 
-            <h4 class="mt-lg accent">PROJECTS</h4>
-            <p><strong>EchoMind</strong> - AI Desktop Companion</p>
+            <p class="mt-md"><strong>CNF Technologies</strong> | Full Stack Engineer | San Antonio, TX | Aug 2024 - Present</p>
             <ul class="terminal-list">
-              <li>Building an AI-powered desktop assistant with contextual awareness</li>
-              <li>Implementing natural language processing and emotional intelligence</li>
+              <li>Developed distributed, high-performance processing systems, improving throughput by 20%</li>
+              <li>Engineered networking and protocol layers using Python and Java, boosting efficiency by 15%</li>
+              <li>Resolved critical system-level issues on Linux infrastructure, reducing downtime by 25%</li>
             </ul>
 
-            <p class="mt-md"><strong>MeteorMate</strong> - AI Roommate Matching System</p>
+            <p class="mt-md"><strong>The AYODE Institute</strong> | Founding Software Engineer | Allen, TX | Sep 2024 – Present</p>
             <ul class="terminal-list">
-              <li>Developing a platform to match students with compatible roommates</li>
-              <li>Using machine learning to analyze preferences and lifestyle data</li>
+              <li>Led development of educational software platforms serving 100,000+ K–12 students across multiple states</li>
+              <li>Managed 20-person cross-functional team implementing Learning Object Repository for 3,000+ educators</li>
+              <li>Optimized backend performance (Node.js, JavaScript, GO), cutting server response times by 25%</li>
             </ul>
 
-            <h4 class="mt-lg accent">LEADERSHIP & INVOLVEMENT</h4>
+            <h4 class="mt-lg accent">KEY PROJECTS</h4>
+            <p><strong>MindCore</strong> - Emotionally Intelligent AI Companion | Jan 2023 - Present</p>
             <ul class="terminal-list">
-              <li>Active participant in university hackathons and coding competitions</li>
-              <li>Member of robotics teams and technical student organizations</li>
-              <li>Contributor to open-source projects and research initiatives</li>
+              <li>Architected AI companion chatbot with 98% accuracy in emotional state detection</li>
+              <li>Implemented dynamic memory architecture using Python, TensorFlow, and fine-tuned RoBERTa-v3 model</li>
             </ul>
 
-            <p class="mt-lg"><em>This is a simplified text version. Download the full PDF for complete details.</em></p>
+            <p class="mt-md"><strong>SongDNA</strong> - AI Music Analysis Platform (Acquired) | May 2025 - Sep 2025</p>
+            <ul class="terminal-list">
+              <li>Built platform extracting 600,000+ structured data points per track for similarity discovery</li>
+              <li>Designed scalable data pipeline (Python, TypeScript, PostgreSQL) improving discovery efficiency by 50%</li>
+            </ul>
+
+            <p class="mt-lg"><em>This is a condensed text version. Download the full PDF for complete details and formatting.</em></p>
           </div>
         </div>
       </section>

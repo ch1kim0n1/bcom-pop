@@ -46,13 +46,61 @@
 
       <!-- Projects Intro -->
       <section class="projects-intro scroll-reveal">
-        <h1 class="accent">Business Communication Projects</h1>
-        <p>This page highlights three core assignments from my business communication course. Each one helped me practice a different side of professional communication: writing clearly, organizing information visually, and presenting as part of a team.</p>
-        <p>Where possible, I've included a brief overview and reflection on what I learned.</p>
+        <h1>Projects</h1>
+        <p>This page showcases my technical projects and course assignments. The technical projects demonstrate my software engineering skills, while the course assignments show my communication and collaboration abilities.</p>
+        <p>Below you'll also find a Data Tracking section with charts showing my growth over time.</p>
       </section>
 
-      <!-- Projects Grid -->
-      <div class="projects-grid">
+      <!-- Technical Projects Section -->
+      <section class="scroll-reveal">
+        <h2>Technical Projects</h2>
+        <div class="projects-grid">
+          
+          <!-- MindCore Project -->
+          <div class="project-card scroll-reveal hover-lift" data-project="mindcore">
+            <div class="project-card-header">
+              <div class="project-card-buttons">
+                <span class="project-card-button" style="background-color: #ff5f56;"></span>
+                <span class="project-card-button" style="background-color: #ffbd2e;"></span>
+                <span class="project-card-button" style="background-color: #666666;"></span>
+              </div>
+              <div class="project-card-title">MindCore</div>
+            </div>
+            <div class="project-card-body">
+              <h3>Emotionally Intelligent AI Companion</h3>
+              <p>An AI companion chatbot with advanced emotional intelligence, featuring 98% accuracy in emotional state detection and dynamic memory architecture for personalized interactions.</p>
+            </div>
+            <div class="project-card-footer">
+              <a href="#" class="view-details-btn">View Details</a>
+            </div>
+          </div>
+
+          <!-- SongDNA Project -->
+          <div class="project-card scroll-reveal hover-lift" data-project="songdna">
+            <div class="project-card-header">
+              <div class="project-card-buttons">
+                <span class="project-card-button" style="background-color: #ff5f56;"></span>
+                <span class="project-card-button" style="background-color: #ffbd2e;"></span>
+                <span class="project-card-button" style="background-color: #666666;"></span>
+              </div>
+              <div class="project-card-title">SongDNA</div>
+            </div>
+            <div class="project-card-body">
+              <h3>AI Music Analysis Platform (Acquired)</h3>
+              <p>An AI-powered music analysis platform that extracts 600,000+ structured data points per track, enabling advanced song similarity discovery and personalized recommendations.</p>
+            </div>
+            <div class="project-card-footer">
+              <a href="#" class="view-details-btn">View Details</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Course Projects Section -->
+      <section class="scroll-reveal">
+        <h2>Course Projects</h2>
+        <div class="projects-grid">
 
         <!-- Project 1: Email Activity -->
         <div class="project-card scroll-reveal hover-lift" data-project="email">
@@ -60,9 +108,9 @@
             <div class="project-card-buttons">
               <span class="project-card-button" style="background-color: #ff5f56;"></span>
               <span class="project-card-button" style="background-color: #ffbd2e;"></span>
-              <span class="project-card-button" style="background-color: #27c93f;"></span>
+              <span class="project-card-button" style="background-color: #666666;"></span>
             </div>
-            <div class="project-card-title">email_activity.txt</div>
+            <div class="project-card-title">Email Activity</div>
           </div>
           <div class="project-card-body">
             <h3>Email Activity – Professional Business Email</h3>
@@ -79,9 +127,9 @@
             <div class="project-card-buttons">
               <span class="project-card-button" style="background-color: #ff5f56;"></span>
               <span class="project-card-button" style="background-color: #ffbd2e;"></span>
-              <span class="project-card-button" style="background-color: #27c93f;"></span>
+              <span class="project-card-button" style="background-color: #666666;"></span>
             </div>
-            <div class="project-card-title">data_tracking.csv</div>
+            <div class="project-card-title">Data Tracking</div>
           </div>
           <div class="project-card-body">
             <h3>Data Tracking Activity – Business Data Visualization</h3>
@@ -98,9 +146,9 @@
             <div class="project-card-buttons">
               <span class="project-card-button" style="background-color: #ff5f56;"></span>
               <span class="project-card-button" style="background-color: #ffbd2e;"></span>
-              <span class="project-card-button" style="background-color: #27c93f;"></span>
+              <span class="project-card-button" style="background-color: #666666;"></span>
             </div>
-            <div class="project-card-title">team_presentation.pptx</div>
+            <div class="project-card-title">Team Presentation</div>
           </div>
           <div class="project-card-body">
             <h3>Team Presentation – Collaborative Business Presentation</h3>
@@ -122,8 +170,7 @@
       <button class="modal-close" aria-label="Close modal">&times;</button>
 
       <div class="project-modal-header">
-        <h2>Email Activity – Professional Business Email</h2>
-        <p class="command-header">cat email_project.md</p>
+        <h2>Email Activity – Professional Email</h2>
       </div>
 
       <div class="project-modal-body">
@@ -162,13 +209,12 @@
       <button class="modal-close" aria-label="Close modal">&times;</button>
 
       <div class="project-modal-header">
-        <h2>Data Tracking Activity – Business Data Visualization</h2>
-        <p class="command-header">cat data_project.md</p>
+        <h2>Data Tracking – Visualizing Progress</h2>
       </div>
 
       <div class="project-modal-body">
         <h3>Project Overview</h3>
-        <p>In the Data Tracking activity, I collected, organized, and visualized data related to a business or communication topic. The main goal was to turn raw numbers into a visual story—and then explain what those numbers actually mean.</p>
+  <p>I collected and visualized yearly development metrics (commits, projects started, languages used). The goal: turn raw numbers into a simple story of growth and focus.</p>
 
         <div class="project-embed">
           <p><em>[Your chart/graph or data visualization would be placed here]</em></p>
@@ -185,7 +231,7 @@
         <p>Instead of just saying, <em>"Here are the numbers,"</em> I tried to say, <em>"Here's what we should do or think based on these numbers."</em></p>
 
         <h3>Reflection: What I Learned</h3>
-        <p>This activity helped me practice <strong>data storytelling</strong>, not just data display. I learned to:</p>
+  <p>This activity helped me practice clear <strong>data storytelling</strong>, not just chart creation. I learned to:</p>
         <ul class="terminal-list">
           <li>Think about my audience first—what they care about and what decisions they might make</li>
           <li>Highlight the key trend instead of overwhelming the reader with every detail</li>
@@ -196,19 +242,107 @@
     </div>
   </div>
 
+  <!-- Modal for MindCore Project -->
+  <div id="mindcore-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+
+      <div class="project-modal-header">
+        <h2>MindCore – Emotionally Intelligent AI Companion</h2>
+      </div>
+
+      <div class="project-modal-body">
+        <h3>Project Overview</h3>
+        <p>MindCore is an emotionally intelligent AI companion chatbot that I've been developing since January 2023. It integrates custom Natural Language Understanding (NLU) models with advanced Large Language Models to create truly personalized interactions.</p>
+
+        <div class="project-embed">
+          <p><em>Key Achievement: 98% accuracy in emotional state detection</em></p>
+          <p>The system uses a fine-tuned RoBERTa-v3 model for emotional context recognition, creating natural conversations that adapt to the user's evolving emotional states.</p>
+        </div>
+
+        <h3>Technical Implementation</h3>
+        <p>The core architecture includes:</p>
+        <ul class="terminal-list">
+          <li><strong>Dynamic Memory System:</strong> Retains and contextualizes user conversations, preferences, and life events</li>
+          <li><strong>Emotional Intelligence:</strong> Custom NLU models with 98% accuracy in emotional state detection</li>
+          <li><strong>Proactive Engagement:</strong> Check-in functionality that initiates conversations based on user patterns</li>
+          <li><strong>Tech Stack:</strong> Python, TensorFlow, fine-tuned RoBERTa-v3 model, custom NLP pipeline</li>
+        </ul>
+
+        <h3>Innovation & Impact</h3>
+        <p>What makes MindCore unique:</p>
+        <ul class="terminal-list">
+          <li>Goes beyond simple chatbot responses to understand and remember emotional context</li>
+          <li>Learns from each interaction to provide increasingly personalized support</li>
+          <li>Proactively reaches out to users based on their emotional patterns and needs</li>
+          <li>Combines cutting-edge AI research with practical emotional intelligence applications</li>
+        </ul>
+
+        <h3>Ongoing Development</h3>
+        <p>This project represents my long-term commitment to advancing AI that truly understands and supports human emotional well-being. It showcases my ability to work on complex, multi-year technical projects while staying current with the latest AI/ML research.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for SongDNA Project -->
+  <div id="songdna-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+
+      <div class="project-modal-header">
+        <h2>SongDNA – AI Music Analysis Platform (Acquired)</h2>
+      </div>
+
+      <div class="project-modal-body">
+        <h3>Project Overview</h3>
+        <p>SongDNA was an AI-powered music analysis platform I built from May to September 2025. The platform could extract over 600,000 structured data points per track, enabling advanced song similarity discovery and personalized recommendations that went far beyond what Spotify or Apple Music APIs could provide.</p>
+
+        <div class="project-embed">
+          <p><em>Successfully Acquired by Ben Weston Music in September 2025</em></p>
+          <p>The platform processed hundreds of songs into a searchable database, improving music discovery efficiency by 50% compared to baseline metadata systems.</p>
+        </div>
+
+        <h3>Technical Architecture</h3>
+        <p>The platform was built with a focus on scalability and performance:</p>
+        <ul class="terminal-list">
+          <li><strong>Data Pipeline:</strong> Python-based audio analysis extracting 600K+ data points per track</li>
+          <li><strong>Frontend:</strong> TypeScript-based interface for music discovery and recommendations</li>
+          <li><strong>Database:</strong> PostgreSQL for structured music data storage and complex queries</li>
+          <li><strong>API Design:</strong> REST API enabling third-party integrations and data access</li>
+        </ul>
+
+        <h3>Key Features & Innovation</h3>
+        <ul class="terminal-list">
+          <li><strong>Deep Audio Analysis:</strong> Extracted far more data points than traditional music platforms</li>
+          <li><strong>Advanced Similarity Matching:</strong> AI algorithms for discovering musically similar tracks</li>
+          <li><strong>Personalized Recommendations:</strong> Machine learning-driven suggestion engine</li>
+          <li><strong>Scalable Processing:</strong> Handled hundreds of songs with efficient batch processing</li>
+        </ul>
+
+        <h3>Business Impact</h3>
+        <p>The successful acquisition demonstrates:</p>
+        <ul class="terminal-list">
+          <li>My ability to build market-ready products that solve real problems</li>
+          <li>Technical execution that impressed industry professionals</li>
+          <li>Understanding of both the technical and business aspects of software development</li>
+          <li>Capacity to deliver projects from concept to successful exit</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <!-- Modal for Team Presentation Project -->
   <div id="presentation-modal" class="modal">
     <div class="modal-content">
       <button class="modal-close" aria-label="Close modal">&times;</button>
 
       <div class="project-modal-header">
-        <h2>Team Presentation – Collaborative Business Presentation</h2>
-        <p class="command-header">cat presentation_project.md</p>
+        <h2>Team Presentation – Collaborative Project</h2>
       </div>
 
       <div class="project-modal-body">
         <h3>Project Overview</h3>
-        <p>For the Team Presentation, our group prepared and delivered a professional presentation on a business-related topic (such as a case study, a strategy recommendation, or an analysis of a real company situation). We had to coordinate slides, speaking roles, and timing as a team.</p>
+  <p>Our team prepared and delivered a presentation on a business topic. We coordinated structure, roles, and timing to keep it clear and practical.</p>
 
         <div class="project-embed">
           <p><em>[Your slide deck or key slides would be embedded here]</em></p>
@@ -225,7 +359,7 @@
         </ul>
 
         <h3>Reflection: What I Learned</h3>
-        <p>This assignment strengthened my <strong>team communication and presentation</strong> skills. I learned to:</p>
+  <p>This assignment strengthened my practical <strong>team communication</strong> skills. I learned to:</p>
         <ul class="terminal-list">
           <li>Balance individual responsibility with group coordination</li>
           <li>Give and receive feedback on slide design and speaking style</li>
@@ -241,6 +375,35 @@
   <footer>
     <p>&copy; 2025 Vladislav Kondratyev | Built with vanilla HTML, CSS, and JavaScript</p>
   </footer>
+
+  <!-- Data Tracking Growth Subsection (added before scripts for clarity) -->
+  <section class="scroll-reveal" id="data-tracking-growth">
+    <div class="container">
+      <h2>Data Tracking Over Time</h2>
+      <p>This section summarizes how my technical activity evolved. Tracking a few simple yearly metrics gave me a clearer picture of progress than relying on memory.</p>
+      <div class="data-tracking-grid">
+        <figure class="data-figure">
+          <img src="assets/ch1kim0n1_commits_per_year.png" alt="Commits per year chart showing annual contribution growth" loading="lazy">
+          <figcaption>Commits: Consistent gains reflect sustained practice rather than short sprints.</figcaption>
+        </figure>
+        <figure class="data-figure">
+          <img src="assets/vlad_projects_per_year.png" alt="Projects started per year chart" loading="lazy">
+          <figcaption>Projects: Early experimentation increases, then shifts toward fewer deeper builds.</figcaption>
+        </figure>
+        <figure class="data-figure">
+          <img src="assets/vlad_languages_per_year.png" alt="Programming languages used per year" loading="lazy">
+          <figcaption>Languages: Gradual, purpose-driven expansion—each added for a real need.</figcaption>
+        </figure>
+      </div>
+      <div class="data-tracking-narrative">
+        <p><strong>How I collected it:</strong> Annual GitHub summaries + local project folders + repo language metadata. Entered into a simple table (Year | Commits | Projects | Languages).</p>
+        <p><strong>What the charts say:</strong> Rising commits and projects align until a conscious plateau in new project starts—focus shifted from quantity to refinement.</p>
+        <p><strong>Why it matters:</strong> A steady language curve without spikes means I adopted tools deliberately, avoiding shallow dabbling.</p>
+        <p><strong>Next steps:</strong> Add quality metrics (tests, documentation) so progress reflects craft, not only volume.</p>
+        <p class="mt-md"><em>Extended narrative in <code>datatrack.md</code>.</em></p>
+      </div>
+    </div>
+  </section>
 
   <!-- JavaScript -->
   <script src="js/main.js"></script>

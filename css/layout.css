@@ -12,7 +12,7 @@ header {
   left: 0;
   width: 100%;
   height: var(--header-height);
-  background-color: rgba(26, 26, 26, 0.95);
+  background-color: rgba(26, 26, 26, 0.92);
   border-bottom: 1px solid var(--border-color);
   backdrop-filter: blur(10px);
   z-index: 1000;
@@ -68,7 +68,7 @@ nav a::after {
 }
 
 nav a:hover {
-  color: var(--accent-green);
+  color: #ffffff;
 }
 
 nav a:hover::before,
@@ -78,7 +78,8 @@ nav a:hover::after {
 
 /* Active page indicator */
 nav a.active {
-  color: var(--accent-green);
+  color: #ffffff;
+  font-weight: 600;
 }
 
 nav a.active::after {
@@ -100,7 +101,7 @@ nav a.active .nav-cursor {
   display: none;
   background: none;
   border: none;
-  color: var(--accent-green);
+  color: var(--text-primary);
   font-size: var(--font-size-lg);
   cursor: pointer;
   padding: var(--spacing-xs);
@@ -289,18 +290,18 @@ footer a {
    ============================================ */
 
 .terminal-window {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 1px solid var(--accent-green);
+  background-color: #2a2a2a;
+  border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   padding: 0;
   overflow: hidden;
-  box-shadow: 0 0 20px var(--accent-glow);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .terminal-header {
-  background-color: rgba(0, 255, 156, 0.1);
+  background-color: #333333;
   padding: var(--spacing-xs) var(--spacing-sm);
-  border-bottom: 1px solid var(--accent-green);
+  border-bottom: 1px solid var(--border-color);
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
@@ -327,7 +328,7 @@ footer a {
 }
 
 .terminal-button.maximize {
-  background-color: #27c93f;
+  background-color: #666666; /* Neutral instead of green */
 }
 
 .terminal-title {

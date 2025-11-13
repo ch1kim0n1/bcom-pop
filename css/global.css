@@ -5,11 +5,11 @@
 /* CSS Variables */
 :root {
   /* Color Palette */
-  --bg-dark: #1a1a1a;
-  --text-primary: #e0e0e0;
-  --accent-green: #00ff9c;
-  --accent-glow: rgba(0, 255, 156, 0.3);
-  --border-color: #333;
+  --bg-dark: #1a1a1a; /* Dark theme background */
+  --text-primary: #e0e0e0; /* Light gray text */
+  --accent-green: #cccccc; /* Light accent color */
+  --accent-glow: rgba(255, 255, 255, 0.15); /* Light glow */
+  --border-color: #404040; /* Dark gray borders */
 
   /* Typography */
   --font-mono: 'Fira Code', 'IBM Plex Mono', 'Courier New', monospace;
@@ -67,59 +67,7 @@ body {
   position: relative;
 }
 
-/* Background grid pattern */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image:
-    linear-gradient(rgba(0, 255, 156, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 255, 156, 0.03) 1px, transparent 1px);
-  background-size: 50px 50px;
-  animation: gridScroll 20s linear infinite;
-  pointer-events: none;
-  z-index: 0;
-}
-
-@keyframes gridScroll {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(50px);
-  }
-}
-
-/* Scanline effect */
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    transparent 50%,
-    rgba(0, 255, 156, 0.02) 50%
-  );
-  background-size: 100% 4px;
-  animation: scanlines 8s linear infinite;
-  pointer-events: none;
-  z-index: 0;
-}
-
-@keyframes scanlines {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(4px);
-  }
-}
+/* Removed dark terminal grid/scanline effects for cleaner white theme */
 
 /* ============================================
    Typography
@@ -149,18 +97,11 @@ p {
 }
 
 /* Command-style headers */
+/* Command-style headers deprecated in light theme; keep class minimal for backwards compatibility */
 .command-header {
   color: var(--accent-green);
   font-size: var(--font-size-lg);
   margin-bottom: var(--spacing-sm);
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xs);
-}
-
-.command-header::before {
-  content: '>';
-  color: var(--accent-green);
 }
 
 /* ============================================
@@ -175,7 +116,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent-green);
+  color: #ffffff;
 }
 
 /* Link with brackets */
@@ -231,9 +172,9 @@ ul.terminal-list {
 }
 
 ul.terminal-list li::before {
-  content: '*';
+  content: '•';
   color: var(--accent-green);
-  font-weight: bold;
+  font-weight: normal;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
@@ -270,16 +211,18 @@ ul.terminal-list li::before {
 /* Accent color */
 .accent {
   color: var(--accent-green);
+  font-weight: 600;
 }
 
 /* Blinking cursor */
+/* Cursor effect minimized */
 .cursor {
   display: inline-block;
-  width: 10px;
-  height: 1.2em;
+  width: 6px;
+  height: 1.1em;
   background-color: var(--accent-green);
   margin-left: 2px;
-  animation: blink 1s step-end infinite;
+  animation: blink 1.2s step-end infinite;
   vertical-align: text-bottom;
 }
 
@@ -322,13 +265,13 @@ ul.terminal-list li::before {
    ============================================ */
 
 ::selection {
-  background-color: var(--accent-green);
-  color: var(--bg-dark);
+  background-color: #ffffff;
+  color: #1a1a1a;
 }
 
 ::-moz-selection {
-  background-color: var(--accent-green);
-  color: var(--bg-dark);
+  background-color: #ffffff;
+  color: #1a1a1a;
 }
 
 /* ============================================
@@ -359,7 +302,7 @@ ul.terminal-list li::before {
 /* Focus styles */
 a:focus,
 button:focus {
-  outline: 2px solid var(--accent-green);
+  outline: 2px solid #cccccc;
   outline-offset: 2px;
 }
 
@@ -368,8 +311,8 @@ button:focus {
   position: absolute;
   top: -40px;
   left: 0;
-  background: var(--accent-green);
-  color: var(--bg-dark);
+  background: #ffffff;
+  color: #1a1a1a;
   padding: var(--spacing-xs) var(--spacing-sm);
   z-index: 100;
   transition: top var(--transition-fast);

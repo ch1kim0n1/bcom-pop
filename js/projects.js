@@ -12,7 +12,9 @@ function initProjectCards() {
   const modals = {
     email: document.getElementById('email-modal'),
     data: document.getElementById('data-modal'),
-    presentation: document.getElementById('presentation-modal')
+    presentation: document.getElementById('presentation-modal'),
+    mindcore: document.getElementById('mindcore-modal'),
+    songdna: document.getElementById('songdna-modal')
   };
 
   projectCards.forEach(card => {

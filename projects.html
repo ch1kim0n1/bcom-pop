@@ -12,6 +12,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -48,7 +51,50 @@
       <section class="projects-intro scroll-reveal">
         <h1>Projects</h1>
         <p>This page showcases my technical projects and course assignments. The technical projects demonstrate my software engineering skills, while the course assignments show my communication and collaboration abilities.</p>
-        <p>Below you'll also find a Data Tracking section with charts showing my growth over time.</p>
+      </section>
+
+      <!-- Data Dashboard Section (Featured at Top) -->
+      <section class="scroll-reveal data-dashboard" id="data-dashboard">
+        <h2>My Growth Dashboard</h2>
+        <p class="dashboard-subtitle">A visual story of my development journey, built from real data.</p>
+        
+        <div class="data-collection-info">
+          <h3>How I Collected This Data</h3>
+          <p>I wrote a Python script that connects to the GitHub API to pull my activity history. The script gathers commit counts, repository creation dates, and language usage across all my projects. I then organized this data into yearly totals and created these interactive charts to visualize my progress over time.</p>
+        </div>
+
+        <div class="charts-grid">
+          <div class="chart-card">
+            <h3>Commits Per Year</h3>
+            <p class="chart-description">Shows my coding consistency over time. The line helps track the trend.</p>
+            <div class="chart-container">
+              <canvas id="commitsChart"></canvas>
+            </div>
+          </div>
+          
+          <div class="chart-card">
+            <h3>Projects Started</h3>
+            <p class="chart-description">Early years show experimentation; later years show deeper focus on fewer projects.</p>
+            <div class="chart-container">
+              <canvas id="projectsChart"></canvas>
+            </div>
+          </div>
+          
+          <div class="chart-card">
+            <h3>Languages Used</h3>
+            <p class="chart-description">Gradual expansion—each language was added to solve a real problem.</p>
+            <div class="chart-container">
+              <canvas id="languagesChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-tracking-narrative">
+          <h3>What This Data Tells Me</h3>
+          <p><strong>Commits staying high while new projects drop off</strong> means I shifted from starting lots of things to going deeper on what I already have. It's not that I stopped coding—I just stopped spreading myself thin across half-finished ideas.</p>
+          <p><strong>A steady language curve without spikes</strong> means I adopted tools deliberately. Instead of jumping on every new framework, I learned things when I needed them for real projects.</p>
+          <p><strong>Next steps:</strong> Add quality metrics (test coverage, documentation completeness) so progress reflects craft, not just volume.</p>
+        </div>
       </section>
 
       <!-- Technical Projects Section -->
@@ -160,6 +206,7 @@
         </div>
 
       </div>
+    </section>
 
     </div>
   </main>
@@ -371,35 +418,6 @@
     </div>
   </div>
 
-  <!-- Data Tracking Growth Subsection (added before scripts for clarity) -->
-  <section class="scroll-reveal" id="data-tracking-growth">
-    <div class="container">
-      <h2>Data Tracking Over Time</h2>
-      <p>This section summarizes how my technical activity evolved. Tracking a few simple yearly metrics gave me a clearer picture of progress than relying on memory.</p>
-      <div class="data-tracking-grid">
-        <figure class="data-figure">
-          <img src="assets/ch1kim0n1_commits_per_year.png" alt="Commits per year chart showing annual contribution growth" loading="lazy">
-          <figcaption>Commits: Consistent gains reflect sustained practice rather than short sprints.</figcaption>
-        </figure>
-        <figure class="data-figure">
-          <img src="assets/vlad_projects_per_year.png" alt="Projects started per year chart" loading="lazy">
-          <figcaption>Projects: Early experimentation increases, then shifts toward fewer deeper builds.</figcaption>
-        </figure>
-        <figure class="data-figure">
-          <img src="assets/vlad_languages_per_year.png" alt="Programming languages used per year" loading="lazy">
-          <figcaption>Languages: Gradual, purpose-driven expansion—each added for a real need.</figcaption>
-        </figure>
-      </div>
-      <div class="data-tracking-narrative">
-        <p><strong>How I collected it:</strong> Annual GitHub summaries + local project folders + repo language metadata. Entered into a simple table (Year | Commits | Projects | Languages). I cross-referenced a few sources to make sure the numbers were right—GitHub's annual summaries gave me commit counts, and my local folders with year tags helped me double-check when projects actually started. The language data came from GitHub's API, which gave me a pretty consistent view of what languages I was actually using across all my projects.</p>
-        <p><strong>What the charts say:</strong> Rising commits and projects align until a conscious plateau in new project starts—focus shifted from quantity to refinement. You can see commits staying high while new projects drop off, which basically means I hit a point where I'd rather go deeper on what I already have than start something new every month. It's not that I stopped coding—I just stopped spreading myself thin across a bunch of half-finished ideas.</p>
-        <p><strong>Why it matters:</strong> A steady language curve without spikes means I adopted tools deliberately, avoiding shallow dabbling. Instead of jumping on every new framework that comes out, I actually learned things when I needed them for real projects. Each language I added was because I had a problem to solve, not because I wanted to look impressive on LinkedIn.</p>
-        <p><strong>Next steps:</strong> Add quality metrics (tests, documentation) so progress reflects craft, not only volume. I want to start tracking things like test coverage and how complete my documentation is, since those tell you way more about whether code is actually good than just commit counts. That way I can see if I'm actually improving the quality of my work, not just churning out more lines.</p>
-        <p class="mt-md"><em>Extended narrative in <code>datatrack.md</code>.</em></p>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Vladislav Kondratyev | Built with vanilla HTML, CSS, and JavaScript</p>
@@ -409,5 +427,6 @@
   <script src="js/main.js"></script>
   <script src="js/animations.js"></script>
   <script src="js/projects.js"></script>
+  <script src="js/charts.js"></script>
 </body>
 </html>

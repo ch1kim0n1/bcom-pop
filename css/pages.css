@@ -161,6 +161,85 @@
   font-weight: bold;
 }
 
+/* Photo Gallery Section */
+.photo-gallery-section {
+  text-align: center;
+}
+
+.photo-gallery-section p {
+  margin-bottom: var(--spacing-lg);
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.photo-placeholder {
+  aspect-ratio: 1;
+  background-color: #2a2a2a;
+  border: 2px dashed var(--border-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-xs);
+  transition: all var(--transition-base);
+}
+
+.photo-placeholder:hover {
+  border-color: var(--accent-green);
+  background-color: rgba(0, 255, 156, 0.05);
+}
+
+.placeholder-icon {
+  font-size: var(--font-size-2xl);
+  color: var(--border-color);
+  font-weight: 300;
+}
+
+.placeholder-text {
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+}
+
+.placeholder-hint {
+  color: var(--text-primary);
+  opacity: 0.5;
+  font-size: var(--font-size-sm);
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-base);
+}
+
+.photo-gallery img:hover {
+  border-color: var(--accent-green);
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 255, 156, 0.15);
+}
+
+@media (max-width: 768px) {
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ============================================
    PROJECTS PAGE
    ============================================ */
@@ -437,6 +516,46 @@
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   text-align: center;
+}
+
+.project-embed.content-unavailable {
+  border-color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.05);
+}
+
+.project-embed.content-unavailable strong {
+  color: #ff6b6b;
+  display: block;
+  margin-bottom: var(--spacing-sm);
+}
+
+.video-embed-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.video-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.dashboard-link {
+  background-color: rgba(0, 255, 156, 0.1);
+  border-color: var(--accent-green);
+}
+
+.dashboard-link:hover {
+  background-color: var(--accent-green);
+  color: #1a1a1a !important;
 }
 
 /* ============================================

@@ -78,6 +78,13 @@ function openModal(projectType, modals) {
 }
 
 function closeModal(modal) {
+  // If no modal passed, find the active one
+  if (!modal) {
+    modal = document.querySelector('.modal.active');
+  }
+  
+  if (!modal) return;
+  
   modal.classList.remove('active');
 
   // Restore body scroll

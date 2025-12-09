@@ -306,22 +306,6 @@ button:focus {
   outline-offset: 2px;
 }
 
-/* Skip to content link */
-.skip-to-content {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: #ffffff;
-  color: #1a1a1a;
-  padding: var(--spacing-xs) var(--spacing-sm);
-  z-index: 100;
-  transition: top var(--transition-fast);
-}
-
-.skip-to-content:focus {
-  top: 0;
-}
-
 /* ============================================
    Responsive Typography
    ============================================ */
